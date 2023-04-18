@@ -1,4 +1,3 @@
-import 'package:awesome_card/awesome_card.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -194,7 +193,6 @@ class CartView extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  Get.to(() => const CartView());
                 },
                 child: Container(
                   height: 100,

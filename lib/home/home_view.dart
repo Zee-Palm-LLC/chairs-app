@@ -86,6 +86,7 @@ class _HomeViewState extends State<HomeView> {
       ),
       bottomSheet: Container(
         height: 240,
+        padding: const EdgeInsets.symmetric(horizontal: 24),
         decoration: const BoxDecoration(
             color: Colors.brown,
             borderRadius: BorderRadius.only(
@@ -95,6 +96,7 @@ class _HomeViewState extends State<HomeView> {
           children: [
             Column(
               children: [
+                const SizedBox(height: 24),
                 RichText(
                     text: const TextSpan(
                         text: '\$',
@@ -169,8 +171,8 @@ class _HomeViewState extends State<HomeView> {
               children: [
                 const Spacer(),
                 InkWell(
-                  onTap: (){
-                    Get.to(()=>const CartView());
+                  onTap: () {
+                    Get.to(() => const CartView());
                   },
                   child: Container(
                     height: 100,
